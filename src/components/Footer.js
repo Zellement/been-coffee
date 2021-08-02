@@ -8,8 +8,10 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 export default function Footer() {
 
   return (
-    <div className="container pb-8 text-sm">
+    <footer className="p-8">
+    <div className="container text-sm">
       <p>© Been Coffee 2021</p>
     </div>
+    </footer>
   )
 }
