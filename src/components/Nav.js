@@ -3,46 +3,47 @@ import { Link } from "gatsby"
 import useToggle from "./UseToggle"
 import { RiMenu3Line } from "react-icons/ri"
 import { IoMdClose } from "react-icons/io"
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export default function Nav() {
-  const [showMenu, showingMenu] = useToggle('hidden')
 
   return (
-    <nav className="lg:flex lg:content-end lg:justify-end lg:flex-col">
-      <ul className={(showMenu ? "hidden" : "block") + " absolute inset-0 z-50 w-full h-full bg-white md:block md:relative md:inset-auto md:h-auto"}>
+    <nav className="flex items-center text-base font-riverside md:text-xl lg:text-2xl xl:text-3xl">
+      <ul className="flex flex-row w-auto gap-8 mx-auto lg:mr-0">
         <li>
-          <Link
-            className=""
-            onClick={showingMenu}
-            activeClassName="is-active"
-            to="/"
+          <AnchorLink 
+            className="hover:text-tuscany focus:text-tuscany"
+            href="#find-us"
           >
-            Home
-          </Link>
+            Find Us
+          </AnchorLink>
+        </li>
+        <li>
+          <AnchorLink 
+            className="hover:text-tuscany focus:text-tuscany"
+            href="#menu"
+          >
+            Menu
+          </AnchorLink>
+        </li>
+        <li>
+          <AnchorLink 
+            className="hover:text-tuscany focus:text-tuscany"
+            href="#our-story"
+          >
+            Our Story
+          </AnchorLink>
+        </li>
+        <li>
+          <AnchorLink 
+            className="hover:text-tuscany focus:text-tuscany"
+            href="#contact"
+          >
+            Contact
+          </AnchorLink>
         </li>
       </ul>
-      
-      {/* <div
-        aria-label="Navigation menu button"
-        tabIndex={0}
-        role="button"
-        className={`bg-black text-white absolute top-0 right-0 z-40 p-2 md:hidden`}
-        onClick={showingMenu}
-        onKeyDown={showingMenu}
-      >
-        <RiMenu3Line className="text-2xl" />
-      </div>
-      
-      <div
-        aria-label="Navigation close menu"
-        tabIndex={0}
-        role="button"
-        className={(showMenu ? "hidden" : "block") + ` bg-black text-white absolute top-0 right-0 z-50 p-2 md:hidden`}
-        onClick={showingMenu}
-        onKeyDown={showingMenu}
-      >
-        <IoMdClose className="text-2xl" />
-      </div> */}
+    
 
     </nav>
   )

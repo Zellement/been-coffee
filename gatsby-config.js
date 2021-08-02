@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
     title: `Been Coffee`,
@@ -30,6 +32,22 @@ module.exports = {
         siteSpeedSampleRate: 10,
         cookieDomain: "example.com",
       },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.been.coffee',
+        sitemap: 'https://www.been.coffee/sitemap.xml',
+        resolveEnv: () => process.env.GATSBY_ENV,
+        env: {
+          development: {
+            policy: [{ userAgent: '*', disallow: ['/'] }]
+          },
+          production: {
+            policy: [{ userAgent: '*', allow: '/' }]
+          }
+        }
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,

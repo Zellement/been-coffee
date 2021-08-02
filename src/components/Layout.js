@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { motion, AnimatePresence } from 'framer-motion'
 
 import Header from "./Header"
+import Footer from "./Footer"
 
 const duration = 0.35
 
@@ -43,6 +44,7 @@ const Layout = ({ children, location }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <AnimatePresence>
         <motion.main
+          className="container"
           key={location.pathname}
           variants={variants}
           initial="initial"
@@ -52,6 +54,7 @@ const Layout = ({ children, location }) => {
         {children}
         </motion.main>
       </AnimatePresence>
+      <Footer />
     </>
   )
 }
