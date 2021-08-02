@@ -37,15 +37,16 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["Riverside", "sans-serif"],
-        outline: ["Riverside Outline", "sans-serif"],
+        riverside: ["Riverside", "Impact", "sans-serif"],
+        "riverside-outline": ["Riverside Outline", "Impact", "sans-serif"],
+        krete: ["Krete", "Georgia", "serif"]
       },
       colors: {
         butterscotch: {
           DEFAULT: "#fab944"
         },
         tuscany: {
-          DEFAULT: "#fab944"
+          DEFAULT: "#D05C32"
         },
         navy: {
           DEFAULT: "#1b1d3c"

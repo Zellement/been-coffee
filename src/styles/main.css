@@ -3,19 +3,32 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Riverside';
-  src: url('../fonts/Riverside.ttf') format('truetype');
+  font-family: "Riverside";
+  src: url("../fonts/Riverside.ttf") format("truetype");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Riverside Outline';
-  src: url('../fonts/RiversideOutline.ttf') format('truetype');
+  font-family: "Riverside Outline";
+  src: url("../fonts/RiversideOutline.ttf") format("truetype");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Krete Book";
+  src: url("../fonts/KreteBook.otf") format("opentype");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-riverside,
+.font-riverside-outline {
+  @apply uppercase;
 }
 
 html {
@@ -25,11 +38,11 @@ html {
 
 body {
   font-size: 62.5%;
-  @apply font-sans text-sm antialiased font-normal leading-normal text-navy xl:text-base bg-butterscotch;
+  @apply text-sm antialiased font-normal leading-normal font-krete text-navy xl:text-base;
 }
 
 .container {
-  @apply mx-auto max-w-screen-3xl;
+  @apply mx-auto max-w-screen-2xl;
 }
 
 a {
@@ -67,4 +80,23 @@ Content
 
 .content p {
   @apply mb-6;
+}
+
+.angle-to-br {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  @apply w-full h-full;
+}
+
+@media only screen and (min-width: 1024px) {
+  .angle-to-br {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 70%);
+  }
+}
+
+.bg-pattern-butterscotch {
+  background-image: url("../images/pattern-butterscotch.svg");
+}
+
+.bg-pattern-tuscany {
+  background-image: url("../images/pattern-tuscany.svg");
 }
