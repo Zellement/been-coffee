@@ -89,7 +89,7 @@ Content
 
 @media only screen and (min-width: 1024px) {
   .angle-to-br {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 70%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 65%);
   }
 }
 

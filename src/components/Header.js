@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import { motion } from "framer-motion"
 import Nav from "./Nav"
 import Logo from "./atoms/Logo"
@@ -9,14 +8,14 @@ import Hexagon from "./atoms/Hexagon"
 import { AiOutlineTwitter, AiFillInstagram, AiFillFacebook } from "react-icons/ai"
 
 const Header = ({ siteTitle }) => (
-  <header className="relative w-full">
+  <header className="relative w-full 3xl:min-h-[595px]">
     <div className="absolute inset-0 h-full angle-to-br bg-butterscotch -z-10">
       <div className="w-full h-full opacity-5 bg-pattern-tuscany"></div>
     </div>
     <div className="container relative w-full lg:flex lg:flex-row lg:space-between">
-    <Hexagon className="absolute top-0 left-0 hidden w-1/2 lg:block lg:mt-[-10%] lg:ml-[-10%]" />
+    <Hexagon className="absolute top-0 left-0 hidden w-1/2 lg:block lg:mt-[-10%] lg:ml-[-10%] 3xl:ml-[-8%]" />
 
-    <div class="bg-navy p-16 w-full lg:w-[35%] lg:mt-20 lg:bg-transparent relative z-10">
+    <div className="bg-navy p-16 w-full lg:w-[35%] lg:mt-20 lg:bg-transparent relative z-10">
       <Link
         className="block w-full max-w-sm mx-auto text-center lg:m-0 lg:max-w-none"
         to="/"
@@ -35,7 +34,7 @@ const Header = ({ siteTitle }) => (
 
       </div>
 
-      <Nav />
+      {/* <Nav /> */}
 
       <div className="flex flex-col items-center gap-0 mt-16 leading-none font-riverside">
         <span className="text-[2.2rem] font-riverside-outline md:text-[3.2rem] xl:text-[4rem]">Locally sourced. Lovingingly Crafted.</span>
@@ -47,13 +46,5 @@ const Header = ({ siteTitle }) => (
 </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
