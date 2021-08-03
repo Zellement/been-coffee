@@ -34,7 +34,7 @@ const Header = ({ siteTitle }) => (
 
       </div>
 
-      {/* <Nav /> */}
+      <Nav />
 
       <div className="flex flex-col items-center gap-0 mt-16 leading-none font-riverside">
         <span className="text-[2.2rem] font-riverside-outline md:text-[3.2rem] xl:text-[4rem]">Locally sourced. Lovingingly Crafted.</span>

@@ -18,14 +18,14 @@ export default function Nav() {
             Find Us
           </AnchorLink>
         </li>
-        <li>
+        {/* <li>
           <AnchorLink 
             className="hover:text-tuscany focus:text-tuscany"
             href="#menu"
           >
             Menu
           </AnchorLink>
-        </li>
+        </li> */}
         <li>
           <AnchorLink 
             className="hover:text-tuscany focus:text-tuscany"
@@ -34,14 +34,14 @@ export default function Nav() {
             Our Story
           </AnchorLink>
         </li>
-        <li>
+        {/* <li>
           <AnchorLink 
             className="hover:text-tuscany focus:text-tuscany"
             href="#contact"
           >
             Contact
           </AnchorLink>
-        </li>
+        </li> */}
       </ul>
     
 

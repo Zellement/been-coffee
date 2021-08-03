@@ -63,15 +63,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply p-0 mb-6 font-bold leading-tight;
-}
-
-h1 {
-  @apply text-xl;
-}
-
-h2 {
-  @apply text-lg;
+  @apply p-0 mb-6 font-normal leading-tight;
 }
 
 /* --------------------------
@@ -93,10 +85,24 @@ Content
   }
 }
 
+.trapezoid-to-r {
+  clip-path: polygon(0% 0%, 100% 20%, 100% 80%, 0% 100%);
+}
+
+.trapezoid-to-l {
+  clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 90%);
+}
+
+@media only screen and (min-width: 1024px) {
+  .trapezoid-to-l {
+    clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 80%);
+  }
+}
+
 .bg-pattern-butterscotch {
-  background-image: url("../images/pattern-butterscotch.svg");
+  background-image: url("../vectors/pattern-butterscotch.svg");
 }
 
 .bg-pattern-tuscany {
-  background-image: url("../images/pattern-tuscany.svg");
+  background-image: url("../vectors/pattern-tuscany.svg");
 }

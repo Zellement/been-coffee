@@ -15,6 +15,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-plugin-postcss`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -30,7 +31,7 @@ module.exports = {
         // Any additional optional fields
         sampleRate: 5,
         siteSpeedSampleRate: 10,
-        cookieDomain: "example.com",
+        cookieDomain: "been.coffee",
       },
     },
     {
@@ -53,10 +54,10 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `been-coffee`,
-        short_name: `starter`,
+        short_name: `been`,
         start_url: `/`,
-        background_color: `#1b1d3c`,
-        theme_color: `#1b1d3c`,
+        background_color: `#fab944`,
+        theme_color: `#fab944`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`,
       },

@@ -37,8 +37,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        riverside: ["Riverside", "Impact", "sans-serif"],
-        "riverside-outline": ["Riverside Outline", "Impact", "sans-serif"],
+        riverside: ["Riverside", "Impact", "Arial Black", "sans-serif"],
+        "riverside-outline": ["Riverside Outline", "Impact", "Arial Black", "sans-serif"],
         krete: ["Krete", "Georgia", "serif"]
       },
       colors: {

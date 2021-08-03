@@ -44,7 +44,6 @@ const Layout = ({ children, location }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <AnimatePresence>
         <motion.main
-          className="container"
           key={location.pathname}
           variants={variants}
           initial="initial"
