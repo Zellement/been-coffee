@@ -16,6 +16,7 @@
     "gatsby-plugin-robots-txt": "^1.6.8",
     "gatsby-plugin-sharp": "^3.10.2",
     "gatsby-source-filesystem": "^3.10.0",
+    "gatsby-source-instagram-all": "^4.2.0",
     "gatsby-transformer-sharp": "^3.10.0",
     "postcss-import": "^14.0.2",
     "postcss-import-resolver": "^2.0.0",

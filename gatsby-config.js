@@ -15,6 +15,12 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-instagram-all`,
+      options: {
+        access_token: process.env.INSTAGRAM_ACCESS,
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-postcss`,
     `gatsby-transformer-sharp`,
@@ -35,20 +41,20 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: 'https://www.been.coffee',
-        sitemap: 'https://www.been.coffee/sitemap.xml',
+        host: "https://www.been.coffee",
+        sitemap: "https://www.been.coffee/sitemap.xml",
         resolveEnv: () => process.env.GATSBY_ENV,
         env: {
           development: {
-            policy: [{ userAgent: '*', disallow: ['/'] }]
+            policy: [{ userAgent: "*", disallow: ["/"] }],
           },
           production: {
-            policy: [{ userAgent: '*', allow: '/' }]
-          }
-        }
-      }
+            policy: [{ userAgent: "*", allow: "/" }],
+          },
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
