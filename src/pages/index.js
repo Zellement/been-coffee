@@ -6,6 +6,8 @@ import Seo from "../components/Seo"
 import imgMap from "../images/map.svg"
 import imgArrowBee from "../images/arrow-bee.svg"
 
+import InstagramFeed from "../components/InstagramFeed"
+
 const IndexPage = () => {
   // const { scrollYProgress } = useViewportScroll()
   // console.log(scrollYProgress)
@@ -43,6 +45,7 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
+      <InstagramFeed />
     </>
   )
 }
