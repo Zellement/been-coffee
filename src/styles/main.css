@@ -34,10 +34,12 @@
 html {
   font-size: 62.5%;
   min-height: 101%;
+
 }
 
 body {
   font-size: 62.5%;
+  
   @apply text-sm antialiased font-normal leading-normal font-krete text-navy xl:text-base;
 }
 
