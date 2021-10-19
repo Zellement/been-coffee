@@ -41,7 +41,7 @@ export default function InstagramFeed() {
               key={instapost.id}
               href={instapost.permalink}
               rel="noopener noreferrer"
-              className="pb-4"
+              className="pb-4 hover:opacity-80"
               target="_blank"
             >
               <div className="relative">
