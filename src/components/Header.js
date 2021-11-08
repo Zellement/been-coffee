@@ -37,9 +37,9 @@ const Header = ({ siteTitle }) => (
       {/* <Nav /> */}
 
       <div className="flex flex-col items-center gap-0 p-4 mt-16 leading-none lg:items-end font-riverside">
-        <span className="text-[2.2rem] font-riverside-outline md:text-[3.2rem] xl:text-[4rem]">Locally sourced, Lovingingly Crafted</span>
-        <span className="text-[4rem] text-tuscany md:text-[5.9rem] xl:text-[7.3rem]">Great Tasting Coffee</span>
-        <span className="text-[6rem] md:text-[9rem] xl:text-[11rem] -mt-4">Opening Soon!</span>
+        <span className="text-[2.2rem] font-riverside-outline md:text-[3.4rem] xl:text-[4.3rem]">Locally sourced, Lovingly Crafted</span>
+        <span className="text-[4rem] text-tuscany md:text-[5.8rem] xl:text-[7.3rem]">Great Tasting Coffee</span>
+        <span className="text-[6rem] md:text-[8.6rem] xl:text-[10.8rem] -mt-4">Opening Soon!</span>
       </div>
 
     </div>
