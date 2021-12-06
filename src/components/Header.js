@@ -30,16 +30,15 @@ const Header = ({ siteTitle }) => (
 
         <a className="hover:text-navy focus:text-navy" rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/beencoffeeuk"><span className="sr-only">Find us on Facebook</span><AiFillFacebook /></a>
         <a className="hover:text-navy focus:text-navy" rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/beencoffeeuk/"><span className="sr-only">Find us on Instagram</span><AiFillInstagram /></a>
-        <a className="hover:text-navy focus:text-navy" rel="noopener noreferrer" target="_blank" href="https://twitter.com/BeenCoffeeUK"><span className="sr-only">Find us on Twitter</span><AiOutlineTwitter /></a>
 
       </div>
 
       {/* <Nav /> */}
 
       <div className="flex flex-col items-center gap-0 p-4 mt-16 leading-none lg:items-end font-riverside">
-        <span className="text-[2.2rem] font-riverside-outline md:text-[3.4rem] xl:text-[4.3rem]">Locally sourced, Lovingly Crafted</span>
-        <span className="text-[4rem] text-tuscany md:text-[5.8rem] xl:text-[7.3rem]">Great Tasting Coffee</span>
-        <span className="text-[6rem] md:text-[8.6rem] xl:text-[10.8rem] -mt-4">Opening Soon!</span>
+        <span className="text-[3.6rem] text-tuscany md:text-[4.4rem] xl:text-[6rem]">Coffee. Cakes. Paninis.</span>
+        <span className="text-[4rem]  font-riverside-outline md:text-[5.8rem] xl:text-[7.3rem]">Opening</span>
+        <span className="text-[6rem] md:text-[8.6rem] xl:text-[10.8rem] -mt-4">13th December!</span>
       </div>
 
     </div>
