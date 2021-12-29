@@ -1,6 +1,8 @@
 import React from "react"
 import Seo from "../components/Seo"
 
+import { StaticImage } from "gatsby-plugin-image"
+
 // import { motion, useViewportScroll } from "framer-motion"
 
 import imgMap from "../images/map.svg"
@@ -14,7 +16,7 @@ const IndexPage = () => {
   return (
     <>
       <Seo title="Coffee Shop near Derby, UK" />
-      <section className="container p-8 mt-12 lg:-mt-40 lg:pb-40 2xl:-mt-56 2xl:pb-56">
+      <section className="container p-8 mt-12 lg:-mt-40 lg:pb-20 2xl:-mt-56 2xl:pb-32">
         <div className="flex flex-col gap-8 lg:flex-row">
           <div className="lg:w-2/5 lg:pt-[20%] 2xl:w-1/3">
             <h1 className="sr-only">Been Coffee</h1>
@@ -44,6 +46,10 @@ const IndexPage = () => {
             <img src={imgMap} />
           </div>
         </div>
+      </section>
+      <section className="relative px-4 my-16">
+      <div className="absolute w-11/12 h-full transform translate-x-10 translate-y-10 inside-image bg-butterscotch -z-10"></div>
+          <StaticImage className="inside-image" src="../images/inside.jpg" alt="A dinosaur" />
       </section>
       <InstagramFeed />
     </>

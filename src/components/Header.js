@@ -35,10 +35,10 @@ const Header = ({ siteTitle }) => (
 
       {/* <Nav /> */}
 
-      <div className="flex flex-col items-center gap-0 p-4 mt-16 leading-none lg:items-end font-riverside">
-        <span className="text-[3.6rem] text-tuscany md:text-[4.4rem] xl:text-[6rem]">Coffee. Cakes. Paninis.</span>
-        <span className="text-[4rem]  font-riverside-outline md:text-[5.8rem] xl:text-[7.3rem]">Opening</span>
-        <span className="text-[6rem] md:text-[8.6rem] xl:text-[10.8rem] -mt-4">13th December!</span>
+      <div className="flex flex-col items-center gap-0 p-4 mt-12 leading-none lg:items-end font-riverside">
+        <span className="text-[3rem] font-riverside-outline mb-4 text-tuscany md:text-[4.4rem] xl:text-[5.5rem]">Independent & family run.</span>
+        <span className="text-[3rem]  md:text-[5.8rem] lg:text-[5rem] xl:text-[6.5rem]">Coffee. Tea. Hot Chocolate.</span>
+        <span className="text-[3.8rem] md:text-[6rem] xl:text-[7rem] lg:text-[5.2rem] text-tuscany">Paninis. Cobs. Cakes.</span>
       </div>
 
     </div>
